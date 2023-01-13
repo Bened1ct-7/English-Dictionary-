@@ -58,7 +58,7 @@ const emitSearch = () => {
     <div v-else class="container-md flex-between">
       <i @click="toggleSearch" class="bi bi-arrow-left"></i>
       <div class="input flex-between">
-        <input v-focus type="text" v-model="searchTerm" placeholder="Search a word..">
+        <input v-focus type="text" @keyup.enter = "emitSearch" v-model="searchTerm" placeholder="Search a word..">
         <i @click="emitSearch" class="bi bi-search search"></i>
       </div>
     </div>
