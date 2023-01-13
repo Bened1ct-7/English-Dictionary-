@@ -1,0 +1,81 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+ 
+ :root {
+   font-size: 15px;
+   --body-background: rgba(255, 255, 255, 0.5);
+   --primary: #1468e4;
+   --text-dark: #111;
+   --text-light: #fff;
+ }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Poppins", Sans-Serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: var(--body-background);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-dark);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nunito {
+  font-family: "Nunito Sans", Sans-Serif;
+}
+
+.inter {
+  font-family: "Inter", Sans-Serif;
+}
+
+.roboto {
+  font-family: "Roboto", Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.dark-text {
+  color: var(--text-dark);
+}
+
+.light-text {
+  color: var(--text-light);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
